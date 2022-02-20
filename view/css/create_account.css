@@ -54,7 +54,7 @@ body{
 }
 
 .header div span{
-  color: #5379fa !important;
+  color: #eb2641 !important;
 }
 
 .login{
@@ -62,7 +62,7 @@ body{
   top: calc(50% - 75px);
   left: calc(50% - 50px);
   height: 150px;
-  width: 350px;
+  width: 500px;
   padding: 10px;
   z-index: 2;
 }
@@ -79,6 +79,19 @@ body{
   font-weight: 400;
   padding: 4px;
 }
+
+.login input[type=email]{
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+  }
 
 .login input[type=password]{
   width: 250px;
@@ -109,6 +122,21 @@ body{
   margin-top: 10px;
 }
 
+.login input[type=submit]{
+    width: 250px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #a18d6c;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px;
+  }
+
 .login input[type=button]:hover{
   opacity: 0.8;
 }
@@ -116,6 +144,22 @@ body{
 .login input[type=button]:active{
   opacity: 0.6;
 }
+
+.login input[type=button]:focus{
+    outline: none;
+  }
+
+  .login input[type=submit]:hover{
+    opacity: 0.8;
+  }
+  
+  .login input[type=submit]:active{
+    opacity: 0.6;
+  }
+  
+  .login input[type=submit]:focus{
+      outline: none;
+    }
 
 .login input[type=text]:focus{
   outline: none;
@@ -127,9 +171,10 @@ body{
   border: 1px solid rgba(255,255,255,0.9);
 }
 
-.login input[type=button]:focus{
-  outline: none;
-}
+.login input[type=email]:focus{
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.9);
+  }
 
 ::-webkit-input-placeholder{
    color: rgba(255,255,255,0.6);
@@ -145,61 +190,4 @@ a{
   font-family: Arial;
   font-size: 12px;
   color: #fff;
-}
-
-.account{
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 150px;
-  width: 390px;
-  padding: 10px;
-  z-index: 1;
-}
-
-.account input[type=button]{
-  top: 0;
-  left: 0;
-  width: 165px;
-  height: 35px;
-  background: #fff;
-  border: 1px solid #fff;
-  cursor: pointer;
-  border-radius: 2px;
-  color: #a18d6c;
-  font-family: 'Exo', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 6px;
-  margin-top: 10px;
-  z-index: 1;
-}
-
-
-.contact{
-  position: fixed;
-  top: 0;
-  right: 160;
-  height: 150px;
-  width: 50px;
-  padding: 10px;
-  z-index: 1;
-}
-
-.contact input[type=submit]{
-  top: 0;
-  left: 0;
-  width: 140px;
-  height: 35px;
-  background: #fff;
-  border: 1px solid #fff;
-  cursor: pointer;
-  border-radius: 2px;
-  color: #b957a4;
-  font-family: 'Exo', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 6px;
-  margin-top: 10px;
-  z-index: 2;
 }

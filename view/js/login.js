@@ -13,6 +13,7 @@
     flg=false;
 
     //ユーザ名、パスワード
+    //同時ログイン可能人数制限を設けたい場合に設定
     member=member-1;
 
     u=new Array(member);
@@ -37,7 +38,7 @@
 
     //認証
     for(j=0;j<=member;j++){
-      if(inputUserName==u[j] && inputPass==p[j])
+    if(inputUserName==u[j] && inputPass==p[j])
       {
         alert("Welcome"+n[j]+"!");
 
@@ -45,7 +46,7 @@
         flg=true;
 
         //画面遷移
-        location.href="success.html";
+        location.href="../top/top.html";
       }
     }
 
@@ -54,5 +55,15 @@
     {
       alert("try again!");
     }
+
+    //同時ログイン回数制限メッセージ
+    if(i>=3 && i<=3){
+    alert("同時ログイン人数制限です。ロックがかかってますのでシステム担当者にご連絡ください。");
+    }
+
+  }
+
+  function CreateNewAcount() {
+    document.location.href = "https://github.com/Ryo1995/application/view/login/create_account.html";
   }
 
